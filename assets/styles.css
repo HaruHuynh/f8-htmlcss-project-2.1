@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Common */
+body {
+    font-family: poppins, sans-serif;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 41px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 14px;
+    border: 1px solid #1ebfc1;
+    color: #1ebfc1;
+    transition: background-color 0.3s ease;
+}
+
+/* =====================================HEADER===================================== */
+.fix-header {
+    margin-top: 57px;
+    position: sticky;
+    top: -57px;
+    z-index: 1;
+    background: #def6f5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu-list {
+    display: flex;
+    gap: 39px;
+    margin-left: 235px;
+}
+
+.menu-list .menu-item a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.menu-list .menu-item a:hover {
+    color: #2f3a3b;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav-action {
+    margin-left: auto;
+}
+
+.nav-action .login {
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-action .login:hover {
+    text-decoration: underline;
+}
+
+.nav-action .signup {
+    margin-left: 24px;
+}
+
+.nav-action .signup:hover {
+    background-color: #1ebfc1;
+    color: #ffffff;
+}
