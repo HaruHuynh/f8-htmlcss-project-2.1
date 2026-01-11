@@ -28,12 +28,16 @@ body {
     text-align: center;
     text-decoration: none;
     border-radius: 14px;
-    border: 1px solid #1ebfc1;
-    color: #1ebfc1;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     transition: background-color 0.3s ease;
 }
 
-/* =====================================HEADER===================================== */
+:root {
+    --primary-color: #1ebfc1;
+}
+
+/* =====================================HEADER SECTION===================================== */
 .fix-header {
     margin-top: 57px;
     position: sticky;
@@ -85,6 +89,80 @@ body {
 }
 
 .nav-action .signup:hover {
-    background-color: #1ebfc1;
+    background-color: var(--primary-color);
     color: #ffffff;
+}
+
+/* =====================================HERO SECTION===================================== */
+.hero-section {
+    padding: 50px 0 79px 0;
+    background: #bcf8e0;
+}
+
+.hero-wrapper {
+    display: flex;
+}
+
+.hero-info {
+    width: 40%;
+}
+
+.hero-info .intro {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero-info .title {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+}
+
+.hero-info .desc {
+    max-width: 374px;
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.hero-info .hero-cta {
+    margin-top: 52px;
+    display: flex;
+}
+
+.hero-info .hero-cta .start-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.hero-info .hero-cta .play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    background: #fff;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+    transition: opacity 0.3s ease;
+}
+
+.hero-info .hero-cta .play-btn:hover {
+    opacity: 0.5;
+}
+
+.hero-content {
+    max-width: 641px;
+}
+.hero-content .hero-img {
+    display: block;
+    margin-left: auto;
+    width: 50%;
+    object-fit: cover;
 }
