@@ -280,3 +280,67 @@ body {
 .hero-content .member-card .avatar:not(:first-child) {
     margin-left: -7px;
 }
+
+/* =====================================FEATURES===================================== */
+.features-section {
+    margin-top: 130px;
+    background: #ebd8ea;
+}
+
+.features-text .intro {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features-text .title {
+    margin-top: 18px;
+    max-width: 577px;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.features-text .desc {
+    margin-top: 18px;
+    max-width: 590px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.features-group {
+    margin-top: 80px;
+    display: flex;
+}
+
+.features-group .item {
+    flex: 1;
+}
+
+.features-group .item-info {
+    margin-top: 26px;
+}
+
+.features-group .item-info .subtitle {
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features-group .item-info .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6875; /* 168.75% */
+}
+
+.features-group .item-info .desc:nth-child(1) {
+    max-width: 168px;
+}
+.features-group .item-info .desc:nth-child(2),
+.features-group .item-info .desc:nth-child(3) {
+    max-width: 224px;
+}
