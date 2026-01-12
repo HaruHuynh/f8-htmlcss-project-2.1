@@ -368,3 +368,113 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
 }
+
+.popular-courses {
+    margin-top: 79px;
+    display: flex;
+    gap: 47px;
+    height: 517px;
+}
+
+.popular-courses .course-item {
+    position: relative;
+}
+
+.popular-courses .course-item .images {
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* opacity: 0.35; */
+}
+
+.course-item .info {
+    position: absolute;
+    left: 17px;
+    top: 322px;
+    width: 325px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+    padding: 18px 25px 29px 25px;
+}
+
+.course-item .info .tuition-fee {
+    max-width: 889px;
+    height: 33px;
+}
+
+.course-item .info .name {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.course-item .info .fee {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.course-item .info .fee strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.course-item .info .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.course-item .info .detail {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.info .detail .class,
+.info .detail .time {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.info .detail .class::before,
+.info .detail .time::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: #1ebfc1;
+    border-radius: 50%;
+}
+
+.popular-stats {
+    margin-top: 265px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.popular-stats .number {
+    color: #0d1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.popular-stats .label {
+    margin-top: 11px;
+    color: #767e7e;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
