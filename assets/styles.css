@@ -287,13 +287,13 @@ body {
     background: #ebd8ea;
 }
 
-.features-text .intro {
+.text-group .intro {
     color: #767e7e;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.features-text .title {
+.text-group .title {
     margin-top: 18px;
     max-width: 577px;
     color: #0d1111;
@@ -302,7 +302,7 @@ body {
     line-height: 1.33; /* 133.333% */
 }
 
-.features-text .desc {
+.text-group .desc {
     margin-top: 18px;
     max-width: 590px;
     color: #767e7e;
@@ -343,4 +343,28 @@ body {
 .features-group .item-info .desc:nth-child(2),
 .features-group .item-info .desc:nth-child(3) {
     max-width: 224px;
+}
+
+/* =====================================POPULAR===================================== */
+.popular-section {
+    margin-top: 130px;
+    background: #c6e9bb;
+}
+
+.popular-section .popular-cta {
+    display: flex;
+}
+
+.popular-section .popular-cta .desc {
+    max-width: 525px;
+    line-height: 1.778; /* 177.778% */
+}
+
+.popular-section .popular-cta .view {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
