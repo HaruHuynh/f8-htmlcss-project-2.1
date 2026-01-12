@@ -22,8 +22,9 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 20px 41px;
-    font-size: 1.6rem;
+    min-width: 186px;
+    padding: 24px 41px;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -86,6 +87,9 @@ body {
 
 .nav-action .signup {
     margin-left: 24px;
+    min-width: 108px;
+    padding: 14px 19px;
+    border-radius: 6px;
 }
 
 .nav-action .signup:hover {
