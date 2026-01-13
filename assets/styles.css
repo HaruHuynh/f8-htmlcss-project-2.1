@@ -31,11 +31,12 @@ body {
     border-radius: 14px;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
-    transition: background-color 0.3s ease;
+    transition: var(--transition);
 }
 
 :root {
     --primary-color: #1ebfc1;
+    --transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* =====================================HEADER SECTION===================================== */
@@ -154,7 +155,7 @@ body {
     border-radius: 62px;
     background: #fff;
     box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
-    transition: opacity 0.3s ease;
+    transition: var(--transition);
 }
 
 .hero-info .hero-cta .play-btn:hover {
@@ -348,7 +349,7 @@ body {
 /* =====================================POPULAR===================================== */
 .popular-section {
     margin-top: 130px;
-    background: #c6e9bb;
+    background: #cddbc8;
 }
 
 .popular-section .popular-cta {
@@ -378,6 +379,12 @@ body {
 
 .popular-courses .course-item {
     position: relative;
+    transition: transform 0.3s ease;
+}
+
+.popular-courses .course-item:hover {
+    transform: translateY(-10px);
+    opacity: 0.7;
 }
 
 .popular-courses .course-item .images {
@@ -385,7 +392,6 @@ body {
     height: 393px;
     object-fit: cover;
     border-radius: 8px;
-    /* opacity: 0.35; */
 }
 
 .course-item .info {
@@ -477,4 +483,130 @@ body {
     text-align: center;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+/* =====================================QUOTE===================================== */
+.quote-section {
+    margin-top: 264px;
+    background: #ffe3e3;
+}
+
+.quote-wrapper {
+    display: flex;
+}
+
+.quote-rate {
+    width: 36%;
+}
+
+.quote-rate blockquote {
+    margin-top: 27px;
+    max-width: 419px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.quote-rate .writer {
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.quote-rate .writer strong {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.quote-rate .controls {
+    max-width: 130px;
+    margin-top: 52px;
+    display: flex;
+    gap: 20px;
+}
+
+.quote-rate .controls .prev,
+.quote-rate .controls .next {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.quote-rate .controls .next:hover,
+.quote-rate .controls .prev:hover {
+    background-color: var(--primary-color);
+}
+
+.quote-rate .controls .next:hover svg path,
+.quote-rate .controls .prev:hover svg path {
+    stroke: #fff;
+}
+
+.avatar-group {
+    width: 679px;
+    height: 481px;
+    position: relative;
+}
+
+.avatar-group .avatar-main img {
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 107px;
+    left: 273px;
+}
+
+.avatar-group .avatar-2nd img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 19px;
+    left: 569px;
+}
+
+.avatar-group .avatar-3rd img {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 144px;
+}
+
+.avatar-group .avatar-4th img,
+.avatar-group .avatar-5th img,
+.avatar-group .avatar-6th img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.avatar-group .avatar-4th img {
+    top: 258px;
+    left: 0;
+}
+
+.avatar-group .avatar-5th img {
+    top: 403px;
+    left: 212px;
+}
+
+.avatar-group .avatar-6th img {
+    top: 374px;
+    left: 569px;
 }
